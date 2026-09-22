@@ -6,23 +6,23 @@
   outputs =
     { nixpkgs, ... }:
     let
-      version = "1.0.4";
+      version = "1.0.5";
       assets = {
         aarch64-darwin = {
           suffix = "darwin-arm64";
-          hash = "sha256-HOcSMfuUADCKzr/+rsCPH2onMHql1uZQlZ8iCj5N6Dg=";
+          hash = "sha256-5lyuyhOTPs0GeWxBKYSh9ycB+NZJguGHYhyG+S7h8/8=";
         };
         aarch64-linux = {
           suffix = "linux-arm64";
-          hash = "sha256-8dJ3n7XcF9pzr3+oaPSW3g/sZZDhRNEjQa1c6QafMPs=";
+          hash = "sha256-BMlWqZKpD/fY5Pm5apCQIRfa9plKm1oKIrdeXdi1F8M=";
         };
         x86_64-darwin = {
           suffix = "darwin-x86_64";
-          hash = "sha256-wvUoJQYbDdlTQoBR24GuzUeGs+5EOseK7iy0D16vvbA=";
+          hash = "sha256-EH9bvYJZIzWNMvHfE7iUzhyHSANGw05+3dvmf7/R178=";
         };
         x86_64-linux = {
           suffix = "linux-x86_64";
-          hash = "sha256-6lvZsM6kNoGwxGStVPJAcRffUfmDtSS3j7VMjFb/JaU=";
+          hash = "sha256-Qwv+oIp8tbBCsqjnHpjCi9uAX19y9yTVRfg4QdJYufM=";
         };
       };
       forAllSystems = nixpkgs.lib.genAttrs (builtins.attrNames assets);
